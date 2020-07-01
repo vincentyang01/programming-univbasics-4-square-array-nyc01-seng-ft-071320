@@ -1,8 +1,3 @@
 def square_array(array)
-  i = 0
-  while array[i] do
-    arr = []
-    array.each { |i| arr << i ** 2 }
-    arr
-  end
+  array.each_with_object([]) { |i,arr| arr << i ** 2 }
 end
