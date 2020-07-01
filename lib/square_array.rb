@@ -1,7 +1,7 @@
 def square_array(array)
-  i = 0
   while array[i] do
-    array[i] = array[i] * array[i]
-    i += 1
+    arr = []
+    array.each { |i| arr << i ** 2 }
+    arr
   end
 end
